@@ -6,19 +6,31 @@ public class ConvertidorTemp1 {
 
     public static void main(String[] args) {
         
-        sc = new Scanner(System.in);
-        byte valorTemp;
-        char uniMedida;
-        double grad;
+        Scanner sc = new Scanner(System.in);
+        
+        //Asignacion de variables
+        float valor_temp, grad;
+        byte uni_medida;
         
         System.out.println("Convertidor de Temperatura ");
         System.out.println("===========================");
         System.out.print("Ingrese el valor de la temeperatura: ");
-        valorTemp = sc.nextByte();
-        System.out.print("Ingrese 'F' para fahrenheit o 'C' para Celcius: ");
-        uniMedida = sc.nextChar();
+        valor_temp = sc.nextByte();
+        System.out.print("Ingrese '1' para fahrenheit o '2' para Celcius: ");
+        uni_medida = sc.nextByte();
         
-        grad = (double) ()
+        switch (uni_medida ) {
+            case 1:
+                grad = ((float)9 / 5) * valor_temp + 32;
+                System.out.println ("La temperatura en grados Farenheit es: " + grad);
+                break;
+            case 2:
+                grad = ((float) 5 / 9) * (valor_temp - 32);
+                System.out.println ("La temperatura en grados Celsius es: " + grad);
+                break;
+            default:
+                System.out.println ("\nOpcion incorercta");
+        }
                 
     }
     

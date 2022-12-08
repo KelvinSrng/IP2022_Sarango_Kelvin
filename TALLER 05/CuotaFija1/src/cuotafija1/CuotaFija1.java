@@ -35,8 +35,8 @@ public class CuotaFija1 {
                 cuota_final = cuota_parcial + seguro_des; {
         System.out.println ("LA CUOTA MENSUAL A PAGAR ASCIENDE A: " + cuota_final);    
     
+        }
+      } 
     }
-   } 
- }
-    }
-    }
+  }
+}

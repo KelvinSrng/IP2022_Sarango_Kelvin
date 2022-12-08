@@ -13,7 +13,7 @@ public class BoletoAutobus1 {
 
         //Interfaz
 
-        System.out.println ("Precio de un bolte de autobus");
+        System.out.println ("Precio de un boleto de autobus");
         System.out.println ("-------------------------------");
         System.out.print ("Ingrese la distancia del recorrido en km: ");
         km = sc.nextFloat ();
