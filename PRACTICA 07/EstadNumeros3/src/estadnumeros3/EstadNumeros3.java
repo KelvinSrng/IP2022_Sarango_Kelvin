@@ -16,7 +16,7 @@ public class EstadNumeros3 {
         suma = 0;
         
         while (c <= n) {
-           System.out.print(  c  );
+           System.out.println(  "Ingrese el numero " + c  );
           num = sc.nextByte();
           suma = (short) (suma + num);
                 
@@ -26,9 +26,7 @@ public class EstadNumeros3 {
                  numM = (byte) num;
                  } else if (num > numM){
                      numM = (byte) num;
-                 }  
-                
-                        
+                 }             
         }
         
         float media = (float) ( (float) suma / (float) (n));
