@@ -1,0 +1,8 @@
+Loja,16
+Azuay,15
+Pichincha,8
+Guayas,25
+Manabí,22
+El Oro,14
+Imbabura,6
+Alex,primera
