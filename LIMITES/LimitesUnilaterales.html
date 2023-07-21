@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Limites Unilaterales</title>
+
+    <style>
+      body {
+        background-color: rgb(0, 4, 15);
+        max-width: 1289px;
+      }
+
+      .fixed-header {
+        height: 45px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgb(9, 18, 44);
+        color: #fff;
+        padding: 29px;
+        margin: -20px;
+      }
+
+      /* Animacion de olas... */
+      body header {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+        /* background-color: rgb(9, 18, 44); */
+        /* position: fixed; */
+        display: flex;
+        height: 8.9vh;
+        width: 100%;
+        /*height: 14.6vh;
+        width: 75.4vh;*/
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 10px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      h2 {
+        font-size: 2rem;
+        position: relative;
+      }
+
+      .fixed-header {
+        color: black;
+        text-shadow: -1px -1px 0 white, 1px -1px 0 white, 1px 1px 0 white,
+          -1px 1px 0 white;
+      }
+
+      .wave {
+        height: -4px;
+        display: flex;
+        position: fixed;
+        color: rgb(57, 173, 240);
+        animation: wave 3s ease-in-out infinite;
+      }
+
+      @keyframes wave {
+        0%,
+        100% {
+          clip-path: polygon(
+            0% 47%,
+            10% 48%,
+            33% 54%,
+            54% 60%,
+            70% 61%,
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+          );
+        }
+
+        50% {
+          clip-path: polygon(
+            0% 60%,
+            15% 65%,
+            34% 66%,
+            51% 62%,
+            67% 50%,
+            84% 45%,
+            100% 46%,
+            100% 100%,
+            0% 100%
+          );
+        }
+      }
+
+      .aux p {
+        /* Para movee le cuadro aux...  */
+        margin: 21px 0px;
+        background-color: rgb(9, 18, 44);
+        color: white;
+        width: 100%;
+        height: 100%;
+        padding: 10px 10px;
+
+        font-family: "Courier New", Courier, monospace;
+        line-height: 30px;
+      }
+
+      .content {
+        color: white;
+        /* se descpalza la caja en Y y X.... */
+        margin: -21px 0px; /* Para mover la caja...*/
+        padding: 10px 10px;
+        border-radius: 3px;
+        font-family: "Courier New", Courier, monospace;
+        background-color: rgb(14, 27, 66);
+        width: 100%; /* para el ancho de la caja */
+        height: 100%;
+        text-align: left;
+      }
+
+      .texto-margen {
+        line-height: 30px;
+      }
+
+      .derecha {
+        background-color: #061e42;
+        margin-top: 50px; /* Ajusta este valor según la cantidad 
+        de espacio que desees agregar */
+      }
+
+      main {
+        padding: top 1000px; /* Ajusta este valor según la altura de tu
+         encabezado para evitar superposiciones */
+      }
+
+      /* Establece las dimensiones del bloque blockquote */
+      .imgur-embed-pub {
+        width: 1000px; /* Ajusta el ancho de la imagen */
+        height: 1000px; /* Ajusta la altura de la imagen */
+      }
+
+      .limitDerecha {
+        margin: 10px;
+      }
+
+      #imagen1 {
+        /* limite derecha*/
+        border-radius: 10px;
+        width: 41%;
+        margin: 0 5px;
+      }
+
+      #imagen2 {
+        /* limite derecha*/
+        border-radius: 10px;
+        width: 41%;
+        margin: 0 5px;
+      }
+
+      image-container {
+        display: flex; /* Las imágenes se colocarán en una fila */
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h2 class="fixed-header">LIMITES UNILATERALES</h2>
+      <h2 class="wave">LIMITES UNILATERALES</h2>
+    </header>
+
+    <main>
+      <div class="aux">
+        <p>
+          Para que exista un límite unilateral, es necesario que la función
+          tenga un comportamiento bien definido en el lado correspondiente
+          (izquierdo o derecho) del punto c. Esto implica que la función debe
+          acercarse a un valor constante o tender al infinito en ese lado.
+          <br />
+          Existen tres limites por el cual se puede evaluar, los cuales son:
+        </p>
+      </div>
+
+      <div class="content">
+        <h3 class="limitDerecha">LIMITES POR LA DERECHA</h3>
+
+        <p class="texto-margen">
+          Dado un punto, el límite unilateral derecho se denota como "lim x→a⁺"
+          y describe el comportamiento de la función cuando x se acerca a "a"
+          desde valores mayores que "a". Se analiza cómo se comporta la función
+          cuando se acerca a "a" desde la derecha.
+        </p>
+
+        <div class="image-container">
+          <a href="https://ibb.co/qRSG10c">
+            <img
+              id="imagen1"
+              src="https://i.ibb.co/BgpDs4Q/Limites-Unilaterales.png"
+              width="400"
+              height="750"
+          /></a>
+
+          <a href="https://ibb.co/rdLFs4s">
+            <img
+              id="imagen2"
+              src="https://i.ibb.co/9Zfctst/Limites-Unilaterales1.png"
+              width="400"
+              height="750"
+          /></a>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

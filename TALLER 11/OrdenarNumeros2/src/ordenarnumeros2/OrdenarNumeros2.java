@@ -9,28 +9,30 @@ public class OrdenarNumeros2 {
         Scanner sc = new Scanner(System.in);
         
         //Declaracion de variables
-        int tmn, aux;
+        int tmn;
 
         //Ingreso de datos
         System.out.println("\tORDENAR NUMEROS DE MENOR A MAYOR");
         System.out.println("---------------------------------------------");
-        System.out.print("¿Cuantos numeros desea ingresar?: ");
+        System.out.print("Ingrese el tamaño del arreglo: ");
         tmn = sc.nextInt();
         
         int [] lista_numeros = new int[tmn];
         
         //Llenado del vector
         for (int i = 0; i < tmn; i++) {
-            System.out.print("Ingrese el numero "+ (i+1) + ": ");
+            System.out.print("Ingrese el elemento "+ (i+1) + ": ");
             lista_numeros[i] = sc.nextInt();
         }
         
-        //lista_numeros = OrdenarVector(lista_numeros);
         
+        
+        //lista_numeros = OrdenarVector(lista_numeros);
         System.out.println("\nLos numeros ordenados de menor a mayor son : " );
         System.out.println(Arrays.toString(OrdenarVector(lista_numeros)));
-
     }
+    
+    // Metodo para ordenar un arreglo de mayor a menor
     public static int[] OrdenarVector(int x[]) {
         int aux;
         for (int lim = x.length-1; lim >= 1; lim--) {
@@ -44,4 +46,5 @@ public class OrdenarNumeros2 {
         }
         return x;
     }
+    
 }

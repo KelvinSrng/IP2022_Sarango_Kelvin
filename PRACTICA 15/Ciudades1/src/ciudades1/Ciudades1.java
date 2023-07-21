@@ -20,6 +20,8 @@ public class Ciudades1 {
             n = sc.nextShort();
             sc.nextLine();
             
+            
+            
             for(short c = 1; c <= n; c++) {
                 System.out.println("Ingrese los datos de la ciudad " + c + ": ");
                 System.out.print("Nombre de la ciudad:  ");

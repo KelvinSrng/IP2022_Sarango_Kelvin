@@ -20,3 +20,4 @@ public class ParImpar1 {
 		System.out.println("\nEl numero " + numero + " es" + mensaje);
 	}
 }
+

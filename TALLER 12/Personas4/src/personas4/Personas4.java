@@ -27,7 +27,7 @@ public class Personas4 {
                 System.out.printf("%-21s%d%n", nombres.get(i), edades.get(i));
             }
         } catch (Exception e) {
-            System.err.println(e);
+            System.err.println( e);
         }
 
     }

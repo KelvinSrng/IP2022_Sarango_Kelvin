@@ -1,11 +1,9 @@
 Quito-2000000-Ecuador
 New York-5000000-EEUU
-Loja
-Quito
 Lima-20000-Peru
 Tokio-9000000-Japon
-Loja
-Quito
 California-7000000-EEUU
 Tokio-9000000-Japon
 Loja-20000-Ecuador
+New York-8000000-EE.UU
+Cuenca-417000-Ecuador
